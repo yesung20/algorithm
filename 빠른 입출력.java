@@ -17,3 +17,4 @@ public class bj_15552 {
         bw.flush();
     }
 }
+//Scanner, sout을 쓰는 것 보다 한번에 버퍼에 저장하고 출력하는 해당 형식이 속도가 훨씬 빠르다.
