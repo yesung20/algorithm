@@ -51,7 +51,8 @@ class Stack5{
             return data;
     }
 
-    public int peek(){     //맨 위의 값을 꺼내고 지우지는 않는다.
+    public int peek() throws Exception {      //맨 위의 값을 꺼내고 지우지는 않는다.
+        if(this.index == -1) throw new Exception("stack empty");
         return arr[index];
     }
 
@@ -63,7 +64,8 @@ class Stack5{
         return index == -1;
     }
 
-    public int search(int data){
+    public int search(int data) throws Exception {
+        if(this.index == -1) throw new Exception("stack empty");
         int position = 1;
         int index = this.index;
         while(index>=0){
