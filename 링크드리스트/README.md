@@ -41,5 +41,6 @@ https://www.acmicpc.net/status?user_id=lingling29&problem_id=2164&from_mine=1
 
 ## 리스트 구현
 .... 포인터랑 친해지니 코딩이 어려웡
-
-1. LinkedList()생성자에서 원래는 항상 head의 포인터 변수를 nullptr로 초기화 해주었었는데 이것은 헤드포인터가 아니라 헤드 노드이기 때문에 Node()생성자에서 항상 link를 nullptr로 초기화 해주므로 따로 nullptr로 초기화 해주지 않아도 된다고 한다.
+공부하다 끄적인거 기록
+![Alt text](01.jpg)
+![Alt text](02.jpg)

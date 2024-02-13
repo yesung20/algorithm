@@ -44,6 +44,7 @@ class LinkedList {
 	Node headNode;
 public:
 	LinkedList() : headNode(0) {}
+	~LinkedList() { clear(); }
 
 	void clear() {
 		while (!isEmpty()) {
@@ -65,9 +66,9 @@ public:
 	}
 	// list.insert(0, new Node(30);
 	void insert(int pos, Node* n) {
-		Node* prev = getEntry(pos - 1);
-		if (prev != nullptr) {
-			prev->insertNext(n);
+		Node* before = getEntry(pos - 1);
+		if (before != nullptr) {
+			before->insertNext(n);
 		}
 	}
 
